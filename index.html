@@ -538,6 +538,38 @@ a { color: var(--color-link, var(--color-primary)); }</style>
             background-position: center;
         }
 
+        /* Featured card cover text */
+        .featured-card-image {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+
+        .cover-text {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+            color: rgba(255, 255, 255, 0.88);
+        }
+
+        .cover-text .cover-title {
+            font-family: var(--font-serif);
+            font-size: 48px;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+            line-height: 1.2;
+            margin-bottom: 12px;
+        }
+
+        .cover-text .cover-accent {
+            display: block;
+            width: 40px;
+            height: 2px;
+            background: #b8860b;
+            margin: 0 auto;
+        }
+
         .featured-card-body {
             padding: 48px 40px;
             display: flex;
@@ -731,7 +763,12 @@ a { color: var(--color-link, var(--color-primary)); }</style>
 
         <!-- Featured: Mars & Venus (most recent) -->
         <a href="mars-venus.html" class="featured-card">
-            <div class="featured-card-image" style="background: linear-gradient(135deg, #2c1810 0%, #1a1a2e 40%, #16213e 70%, #0f3460 100%);"></div>
+            <div class="featured-card-image" style="background: linear-gradient(135deg, #2c1810 0%, #1a1a2e 40%, #16213e 70%, #0f3460 100%);">
+                <div class="cover-text">
+                    <div class="cover-title">The Art<br>of Two</div>
+                    <span class="cover-accent"></span>
+                </div>
+            </div>
             <div class="featured-card-body">
                 <div class="featured-card-tag">Book Reflection</div>
                 <h3 class="featured-card-title">Men Are from Mars, Women Are from Venus</h3>
